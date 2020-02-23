@@ -18,7 +18,7 @@ public class WordCountTest {
     @Test
     public void testExecutionOfWordCount(){
         WordCount wordCount = new WordCount();
-        Path path = Paths.get("/Users/kamal/workspace/java-programs/src/test/java/com/sample/problems/WordCountTest.java");
+        Path path = Paths.get("src/test/java/com/sample/problems/WordCountTest.java");
         int count = wordCount.getRepeatedWordCountOn("import", path);
         assertThat("Check the number of times word is repeated", count, Matchers.is(7));
     }
